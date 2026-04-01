@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
 
-const Color white = Colors.white;
-const Color blackWithOpacity87 = Colors.black87;
-const Color transparent = Colors.transparent;
-const Color blue = Colors.blue;
+// 2026 Dark Theme Colors
+const Color backgroundDark = Color(0xFF0A1929); // Deep Blue
+const Color backgroundPurple = Color(0xFF7B2EDA); // Deep Purple
+const Color accentCyan = Color(0xFF00F5D0); // Neon Cyan
+const Color textPrimary = Color(0xFFE0E0E0); // Legible Off-White
+const Color textSecondary = Color(0xFF8A9BB2);
 
-const Color black = Color.fromRGBO(31, 41, 55, 1);
-const Color grey = Color.fromRGBO(106, 106, 106, 1);
-const Color customOrange = Color.fromRGBO(241, 68, 68, 1);
-const Color lightBlue = Color.fromRGBO(238, 243, 248, 1);
-const Color transitionWhite = Color.fromRGBO(248, 249, 252, 1);
-const Color dividerColor = Color.fromRGBO(238, 238, 238, 1);
-const Color streamLightBlue = Color.fromRGBO(246, 248, 255, 1);
-const Color streamDarkBlue = Color.fromRGBO(0, 85, 255, 1.0);
-const Color streamDarkBlueText = Color.fromRGBO(41, 70, 140, 1.0);
-const Color websiteLightOrange = Color.fromRGBO(255, 245, 244, 1);
-const Color websiteDarkOrange = Color.fromRGBO(252, 76, 27, 1);
-const Color websiteDarkOrangeText = Color.fromRGBO(196, 42, 0, 1);
-const Color appBarBackgroundColor = Color.fromRGBO(244, 244, 246, 1);
+// Utility Colors
+const Color white = Colors.white;
+const Color black = Colors.black;
+const Color transparent = Colors.transparent;
+
+// Glassmorphism overlays
+const Color glassBackground = Color(0x1AFFFFFF); // 10% White
+const Color glassBorder = Color(0x33FFFFFF); // 20% White

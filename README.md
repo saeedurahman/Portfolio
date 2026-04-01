@@ -28,7 +28,7 @@ https://alperefesahin.dev
 ## Props
 
 - MVVM
-- Riverpod
+- Bloc
 - Auto Generated Assets
 - MakeFile
 - Dependency Injection

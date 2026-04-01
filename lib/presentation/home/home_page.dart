@@ -1,136 +1,143 @@
-import 'package:alperefesahin_dev/core/constants/colors.dart';
-import 'package:alperefesahin_dev/core/design_system/custom_divider.dart';
-import 'package:alperefesahin_dev/core/design_system/custom_text.dart';
-import 'package:alperefesahin_dev/core/design_system/footer/footer_section.dart';
-import 'package:alperefesahin_dev/core/mixins/launch_mixin.dart';
-import 'package:alperefesahin_dev/presentation/gen/assets.gen.dart';
-import 'package:alperefesahin_dev/presentation/home/widgets/about/about_section.dart';
-import 'package:alperefesahin_dev/presentation/home/widgets/open_source/open_source_section.dart';
-import 'package:alperefesahin_dev/presentation/home/widgets/youtube/youtube_section.dart';
-import 'package:alperefesahin_dev/presentation/home/widgets/writing/writing_section.dart';
-import 'package:alperefesahin_dev/presentation/home/widgets/stay_in_touch/stay_in_touch_section.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import '../../core/constants/colors.dart';
+import 'widgets/animated_background.dart';
+import 'widgets/header_navigation.dart';
+import 'widgets/hero_section.dart';
+import 'widgets/services_section.dart';
+import 'widgets/skills_section.dart';
+import 'widgets/projects_section.dart';
+import 'widgets/experience_section.dart';
+import 'widgets/code_snippet_section.dart';
+import 'widgets/testimonials_section.dart';
+import 'widgets/contact_section.dart';
 
-class HomePage extends StatelessWidget with LaunchMixin {
-  const HomePage({super.key, required this.onTapLanguageButton, required this.isAppLanguageEnglish});
+class HomePage extends StatefulWidget {
+  const HomePage({
+    super.key,
+    required this.onTapLanguageButton,
+    required this.isAppLanguageEnglish,
+  });
 
   final VoidCallback onTapLanguageButton;
   final bool isAppLanguageEnglish;
 
   @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  final ScrollController _scrollController = ScrollController();
+  final GlobalKey _servicesKey = GlobalKey();
+  final GlobalKey _skillsKey = GlobalKey();
+  final GlobalKey _workKey = GlobalKey();
+  final GlobalKey _experienceKey = GlobalKey();
+  final GlobalKey _contactKey = GlobalKey();
+
+  void _scrollToSection(int index) {
+    final keys = [
+      _servicesKey,
+      _skillsKey,
+      _workKey,
+      _experienceKey,
+      _contactKey,
+    ];
+
+    if (index < 0 || index >= keys.length) return;
+
+    final context = keys[index].currentContext;
+    if (context != null) {
+      Scrollable.ensureVisible(
+        context,
+        duration: const Duration(milliseconds: 800),
+        curve: Curves.easeOutCubic,
+      );
+    }
+  }
+
+  void _scrollToWork() => _scrollToSection(2);
+  void _scrollToContact() => _scrollToSection(4);
+
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    const double maxScreenWidth = 1280;
-    final double screenWidth = MediaQuery.of(context).size.width;
-
-    final bool isMobile = screenWidth < 1020;
-
-    final String emailAddress = AppLocalizations.of(context)?.emailAddress ?? '';
-    final String emailSubject = AppLocalizations.of(context)?.emailSubject ?? '';
-    final String emailBody = AppLocalizations.of(context)?.emailBody ?? '';
-    final String miniAppBarImagePath = Assets.efe.path;
-    final String appLanguageImagePath = isAppLanguageEnglish ? Assets.ukFlag.path : Assets.trFlag.path;
-
     return Scaffold(
-      backgroundColor: white,
-      appBar: AppBar(
-        leadingWidth: isMobile ? 70 : 170,
-        toolbarHeight: 80,
-        elevation: 0.5,
-        scrolledUnderElevation: 0.5,
-        shadowColor: grey.withValues(alpha: 0),
-        backgroundColor: appBarBackgroundColor,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 8),
-            child: InkWell(
-              highlightColor: transparent,
-              splashColor: transparent,
-              hoverColor: transparent,
-              onTap: onTapLanguageButton,
-              child: Container(
-                width: 24,
-                height: 24,
-                decoration: BoxDecoration(
-                  color: transparent,
-                  image: DecorationImage(
-                    image: AssetImage(appLanguageImagePath),
-                    filterQuality: FilterQuality.high,
-                    fit: BoxFit.fill,
+      backgroundColor: backgroundDark,
+      body: Stack(
+        children: [
+          const AnimatedBackground(),
+          CustomScrollView(
+            controller: _scrollController,
+            slivers: [
+              SliverPadding(
+                padding: EdgeInsets.symmetric(
+                  horizontal:
+                      MediaQuery.of(context).size.width > 1024 ? 120 : 24,
+                  vertical: 40,
+                ),
+                sliver: SliverToBoxAdapter(
+                  child: Column(
+                    children: [
+                      HeaderNavigation(onMenuTapped: _scrollToSection),
+
+                      const SizedBox(height: 60),
+
+                      HeroSection(
+                        onViewWork: _scrollToWork,
+                        onContact: _scrollToContact,
+                      ),
+
+                      const SizedBox(height: 100),
+
+                      Container(
+                        key: _servicesKey,
+                        child: const ServicesSection(),
+                      ),
+
+                      const SizedBox(height: 100),
+
+                      Container(
+                        key: _skillsKey,
+                        child: const SkillsSection(),
+                      ),
+
+                      const SizedBox(height: 100),
+
+                      const CodeSnippetSection(),
+
+                      const SizedBox(height: 100),
+
+                      Container(
+                        key: _workKey,
+                        child: const ProjectsSection(),
+                      ),
+
+                      const SizedBox(height: 100),
+
+                      Container(
+                        key: _experienceKey,
+                        child: const ExperienceSection(),
+                      ),
+
+                      const SizedBox(height: 100),
+
+                      const TestimonialsSection(),
+
+                      Container(
+                        key: _contactKey,
+                        child: const ContactSection(),
+                      ),
+                    ],
                   ),
                 ),
               ),
-            ),
-          ),
-          const Padding(padding: EdgeInsets.symmetric(vertical: 24), child: VerticalDivider()),
-          Padding(
-            padding: const EdgeInsets.only(left: 8, right: 20),
-            child: InkWell(
-              highlightColor: transparent,
-              splashColor: transparent,
-              hoverColor: transparent,
-              onTap: () => launchEmail(emailAddress: emailAddress, emailSubject: emailSubject, emailBody: emailBody),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                spacing: 8,
-                children: [
-                  const FaIcon(FontAwesomeIcons.solidEnvelope, size: 14),
-                  CustomText(text: emailAddress, fontSize: 16, fontWeight: FontWeight.w600),
-                ],
-              ),
-            ),
+            ],
           ),
         ],
-        leading: Padding(
-          padding: EdgeInsets.only(left: isMobile ? 20 : 120, top: 16, bottom: 16),
-          child: Container(
-            width: 48,
-            height: 48,
-            decoration: BoxDecoration(
-              color: black,
-              borderRadius: BorderRadius.circular(8),
-              image: DecorationImage(
-                image: AssetImage(miniAppBarImagePath),
-                filterQuality: FilterQuality.high,
-                fit: BoxFit.fill,
-              ),
-            ),
-          ),
-        ),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: isMobile ? 20 : 120),
-              child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: maxScreenWidth),
-                child: Column(
-                  children: [
-                    AboutSection(isMobile: isMobile),
-                    WritingSection(isMobile: isMobile),
-                    OpenSourceSection(isMobile: isMobile),
-                    YoutubeSection(isMobile: isMobile),
-                    StayInTouchSection(isMobile: isMobile),
-                  ],
-                ),
-              ),
-            ),
-            Column(
-              children: [
-                const CustomDivider(),
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: isMobile ? 20 : 120),
-                  child: ConstrainedBox(
-                    constraints: const BoxConstraints(maxWidth: maxScreenWidth),
-                    child: FooterSection(isMobile: isMobile),
-                  ),
-                ),
-              ],
-            ),
-          ],
-        ),
       ),
     );
   }
