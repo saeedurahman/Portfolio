@@ -24,13 +24,15 @@ class AppLocalizationsUr extends AppLocalizations {
   String get howItStartedTitle => 'یہ سب کیسے شروع ہوا';
 
   @override
-  String get howItStartedDescription => 'میں 2001 میں ترکی میں پیدا ہوا اور 14 سال کی عمر میں سافٹ ویئر انجینئرنگ کے بارے میں میری شغف کا پتہ چلا۔ میری پہلی کوشش سادہ مشینوں فورم (SMF) استعمال کرتے ہوئے \'forumtim.com\' نام کا ایک فورم بنانا تھی۔ اگرچہ یہ کامیاب نہیں رہا، میں نے ہار نہیں مانی۔\n\nجب میں نے ریاضی کی شاخ میں یونیورسٹی میں داخلہ لیا، تو میں نے اپنے آپ کو سافٹ ویئر انجینئرنگ میں بہتری کے لیے وقف کر دیا۔ میں نے Python کے ساتھ اپنا سفر شروع کیا، بعد میں ویب ڈویلپمنٹ میں منتقل ہوا، جس کی وجہ سے Jotform میں انٹرنشپ ملی۔ 2020 میں، میں نے Flutter کو دریافت کیا، اور اس وقت یہ ایک نیا فریم ورک تھا، اور میں نے Flutter ڈویلپر کے طور پر پیشہ وری کا فیصلہ کیا۔\n\nاب تک، میں نے کئی کمپنیوں کے ساتھ کام کیا ہے، میڈیم پر مضامین لکھے ہیں، YouTube ویڈیوز بنائی ہیں، اور ڈویلپر کمیونٹی کو حصہ دینے کے لیے اوپن سورس پروجیکٹس بنائے ہیں۔';
+  String get howItStartedDescription =>
+      'میں 2001 میں ترکی میں پیدا ہوا اور 14 سال کی عمر میں سافٹ ویئر انجینئرنگ کے بارے میں میری شغف کا پتہ چلا۔ میری پہلی کوشش سادہ مشینوں فورم (SMF) استعمال کرتے ہوئے \'forumtim.com\' نام کا ایک فورم بنانا تھی۔ اگرچہ یہ کامیاب نہیں رہا، میں نے ہار نہیں مانی۔\n\nجب میں نے ریاضی کی شاخ میں یونیورسٹی میں داخلہ لیا، تو میں نے اپنے آپ کو سافٹ ویئر انجینئرنگ میں بہتری کے لیے وقف کر دیا۔ میں نے Python کے ساتھ اپنا سفر شروع کیا، بعد میں ویب ڈویلپمنٹ میں منتقل ہوا، جس کی وجہ سے Jotform میں انٹرنشپ ملی۔ 2020 میں، میں نے Flutter کو دریافت کیا، اور اس وقت یہ ایک نیا فریم ورک تھا، اور میں نے Flutter ڈویلپر کے طور پر پیشہ وری کا فیصلہ کیا۔\n\nاب تک، میں نے کئی کمپنیوں کے ساتھ کام کیا ہے، میڈیم پر مضامین لکھے ہیں، YouTube ویڈیوز بنائی ہیں، اور ڈویلپر کمیونٹی کو حصہ دینے کے لیے اوپن سورس پروجیکٹس بنائے ہیں۔';
 
   @override
   String get howIsItGoingTitle => 'اب کیسا چل رہا ہے';
 
   @override
-  String get howIsItGoingDescription => 'میں ایک Flutter ڈیولپر ہوں جس کو صاف کوڈنگ طریقوں استعمال کرتے ہوئے بدیہی اور موثر موبائل ایپلیکیشنز بنانے میں بہت تجربہ ہے۔\n\nسالوں سے، میں نے مختلف کمپنیوں کے ساتھ تعاون کیا ہے تاکہ انہوں کی ضروریات کے مطابق اعلیٰ معیار کی Flutter ایپلیکیشنز تیار کر سکوں۔ میں ایسے مشکل پروجیکٹس پر کام کرنے کے لیے بہت تیار ہوں جو موبائل ایپ ڈویلپمنٹ کی حدود کو آگے بڑھائیں۔\n\nاپنے فارغ وقت میں، میں اوپن سورس پروجیکٹس بناتا ہوں، YouTube پر ویڈیو ٹیوٹوریلز ریکارڈ کرتا ہوں، اور Medium کے ذریعے اپنی سمجھ بانی آگے بڑھاتا ہوں۔';
+  String get howIsItGoingDescription =>
+      'میں ایک Flutter ڈیولپر ہوں جس کو صاف کوڈنگ طریقوں استعمال کرتے ہوئے بدیہی اور موثر موبائل ایپلیکیشنز بنانے میں بہت تجربہ ہے۔\n\nسالوں سے، میں نے مختلف کمپنیوں کے ساتھ تعاون کیا ہے تاکہ انہوں کی ضروریات کے مطابق اعلیٰ معیار کی Flutter ایپلیکیشنز تیار کر سکوں۔ میں ایسے مشکل پروجیکٹس پر کام کرنے کے لیے بہت تیار ہوں جو موبائل ایپ ڈویلپمنٹ کی حدود کو آگے بڑھائیں۔\n\nاپنے فارغ وقت میں، میں اوپن سورس پروجیکٹس بناتا ہوں، YouTube پر ویڈیو ٹیوٹوریلز ریکارڈ کرتا ہوں، اور Medium کے ذریعے اپنی سمجھ بانی آگے بڑھاتا ہوں۔';
 
   @override
   String get hi => 'السلام علیکم! ';
@@ -48,31 +50,36 @@ class AppLocalizationsUr extends AppLocalizations {
   String get mapMotionFlutterTitle => 'MapMotion Flutter';
 
   @override
-  String get mapMotionFlutterDescription => 'ایک ہموار اور حرکت پذیر Map ایپلیکیشن بنائیں۔';
+  String get mapMotionFlutterDescription =>
+      'ایک ہموار اور حرکت پذیر Map ایپلیکیشن بنائیں۔';
 
   @override
   String get socialDatingTitle => 'Bloc اور DDD کے ساتھ سوشل ڈیٹنگ ایپ';
 
   @override
-  String get socialDatingDescription => 'Bloc، Freezed، اور DDD اصولوں کے ساتھ بنائی گئی سوشل ڈیٹنگ ایپلیکیشن۔';
+  String get socialDatingDescription =>
+      'Bloc، Freezed، اور DDD اصولوں کے ساتھ بنائی گئی سوشل ڈیٹنگ ایپلیکیشن۔';
 
   @override
   String get textToImageGeneratorTitle => 'متن سے تصویر جنریٹر';
 
   @override
-  String get textToImageGeneratorDescription => 'متن کے سوالات سے ایک جدید AI ماڈل استعمال کرتے ہوئے تصویریں بنائیں۔';
+  String get textToImageGeneratorDescription =>
+      'متن کے سوالات سے ایک جدید AI ماڈل استعمال کرتے ہوئے تصویریں بنائیں۔';
 
   @override
   String get dddTitle => 'Flutter Firebase DDD with BLoC';
 
   @override
-  String get dddDescription => 'Firebase انضمام اور BLoC اسٹیٹ کے ساتھ اپڈیٹ شدہ DDD سیریز ایپ۔';
+  String get dddDescription =>
+      'Firebase انضمام اور BLoC اسٹیٹ کے ساتھ اپڈیٹ شدہ DDD سیریز ایپ۔';
 
   @override
   String get openSourceTitle => 'اوپن سورس';
 
   @override
-  String get openSourceDescription => 'اوپن سورس میری انجینئرنگ کے سفر کا ایک بنیادی حصہ ہے۔ یہ ہے کہ میں کیسے سیکھتا ہوں، بڑھتا ہوں، اور کمیونٹی کو واپس دیتا ہوں۔ مجھے اپنے پروجیکٹس سے دوسروں کو متاثر کرنے پر بہت خوشی ہے۔ براہ کرم میری GitHub پر کچھ کو دیکھنے میں آزاد رہیں!';
+  String get openSourceDescription =>
+      'اوپن سورس میری انجینئرنگ کے سفر کا ایک بنیادی حصہ ہے۔ یہ ہے کہ میں کیسے سیکھتا ہوں، بڑھتا ہوں، اور کمیونٹی کو واپس دیتا ہوں۔ مجھے اپنے پروجیکٹس سے دوسروں کو متاثر کرنے پر بہت خوشی ہے۔ براہ کرم میری GitHub پر کچھ کو دیکھنے میں آزاد رہیں!';
 
   @override
   String get viewMoreOnGithubText => 'GitHub پر مزید دیکھیں';
@@ -81,13 +88,15 @@ class AppLocalizationsUr extends AppLocalizations {
   String get flutterSocialChatTitle => 'Flutter سوشل چیٹ';
 
   @override
-  String get flutterSocialChatDescription => 'ہائبرڈ، فنکشنل، اور ڈیزائن کردہ چیٹ ایپ: Flutter سوشل چیٹ۔';
+  String get flutterSocialChatDescription =>
+      'ہائبرڈ، فنکشنل، اور ڈیزائن کردہ چیٹ ایپ: Flutter سوشل چیٹ۔';
 
   @override
   String get flutterPersonalWebsiteTitle => 'Flutter ذاتی ویب سائٹ';
 
   @override
-  String get flutterPersonalWebsiteDescription => 'یہ ویب سائٹ بھی ایک اوپن سورس پروجیکٹ ہے۔';
+  String get flutterPersonalWebsiteDescription =>
+      'یہ ویب سائٹ بھی ایک اوپن سورس پروجیکٹ ہے۔';
 
   @override
   String get github => 'GitHub';
@@ -99,7 +108,8 @@ class AppLocalizationsUr extends AppLocalizations {
   String get stayInTouch => 'رابطے میں رہیں';
 
   @override
-  String get stayInTouchSubText => 'میری تازہ ترین پوسٹس اور پروجیکٹس سے محروم نہ رہیں! مجھ سے Twitter پر رابطہ کریں تاکہ جڑے رہیں، سوالات پریں، یا کسی بھی چیز کے بارے میں بات کریں!';
+  String get stayInTouchSubText =>
+      'میری تازہ ترین پوسٹس اور پروجیکٹس سے محروم نہ رہیں! مجھ سے Twitter پر رابطہ کریں تاکہ جڑے رہیں، سوالات پریں، یا کسی بھی چیز کے بارے میں بات کریں!';
 
   @override
   String get followMe => 'مجھے فالو کریں';
@@ -111,7 +121,8 @@ class AppLocalizationsUr extends AppLocalizations {
   String get writingTitle => 'Medium (FlutterWiz)';
 
   @override
-  String get writingTitleDescription => 'Medium پر، میں اپنے Flutter ڈیولپر کے طور پر اپنے سفر کو شیئر کرتا ہوں، اسٹیٹ مینجمنٹ، آرکیٹیکچر، اور چیلنجز جیسے موضوعات کو سنبھالتے ہوئے۔ اپنے ذاتی پروفائل پر لکھنے کے علاوہ، میں CodeX اور Towards Dev جیسی معروف اشاعتوں میں حصہ لیتا ہوں۔';
+  String get writingTitleDescription =>
+      'Medium پر، میں اپنے Flutter ڈیولپر کے طور پر اپنے سفر کو شیئر کرتا ہوں، اسٹیٹ مینجمنٹ، آرکیٹیکچر، اور چیلنجز جیسے موضوعات کو سنبھالتے ہوئے۔ اپنے ذاتی پروفائل پر لکھنے کے علاوہ، میں CodeX اور Towards Dev جیسی معروف اشاعتوں میں حصہ لیتا ہوں۔';
 
   @override
   String get mapAppTitle => 'ایک Map ایپلیکیشن بنانا';
@@ -141,7 +152,8 @@ class AppLocalizationsUr extends AppLocalizations {
   String get youtubeTitle => 'YouTube (FlutterWiz)';
 
   @override
-  String get youtubeDescription => 'میں FlutterWiz کے طور پر Flutter ڈیولپمنٹ پر اپنے تجربات اور بصیرتوں کو شیئر کرتا ہوں، اسٹیٹ مینجمنٹ، صاف آرکیٹیکچر، اور اوپن سورس پروجیکٹس پر توجہ مرکز کرتے ہوئے۔';
+  String get youtubeDescription =>
+      'میں FlutterWiz کے طور پر Flutter ڈیولپمنٹ پر اپنے تجربات اور بصیرتوں کو شیئر کرتا ہوں، اسٹیٹ مینجمنٹ، صاف آرکیٹیکچر، اور اوپن سورس پروجیکٹس پر توجہ مرکز کرتے ہوئے۔';
 
   @override
   String get visitYoutubeChannelText => 'FlutterWiz دیکھیں';
@@ -153,7 +165,8 @@ class AppLocalizationsUr extends AppLocalizations {
   String get dateMarch => 'مارچ 12، 2023';
 
   @override
-  String get flutterSohbetleriDescription => 'ترکی میں Flutter ڈیولپرز کے سفروں کے بارے میں بات کریں—مجھ سے شروع کرتے ہوئے، اس پہلی قسط میں!';
+  String get flutterSohbetleriDescription =>
+      'ترکی میں Flutter ڈیولپرز کے سفروں کے بارے میں بات کریں—مجھ سے شروع کرتے ہوئے، اس پہلی قسط میں!';
 
   @override
   String get socialChatTitle => 'Flutter سوشل چیٹ ٹیوٹوریل';
@@ -162,7 +175,8 @@ class AppLocalizationsUr extends AppLocalizations {
   String get dateJan => 'جنوری 23، 2023';
 
   @override
-  String get socialChatDescription => 'اس ٹیوٹوریل سیریز میں مرحلہ وار Flutter سوشل چیٹ ایپلیکیشن بنانا سیکھیں!';
+  String get socialChatDescription =>
+      'اس ٹیوٹوریل سیریز میں مرحلہ وار Flutter سوشل چیٹ ایپلیکیشن بنانا سیکھیں!';
 
   @override
   String get flutterMapAppTitle => 'Flutter Map ایپلیکیشن بنانا';
@@ -171,5 +185,6 @@ class AppLocalizationsUr extends AppLocalizations {
   String get dateFebTwelve => 'فروری 12، 2025';
 
   @override
-  String get flutterMapAppDescription => 'اجازتیں اور ایپ کی زندگی کی چکر، انٹرایکٹو نقشے، حرکات اور راستہ ٹریکنگ';
+  String get flutterMapAppDescription =>
+      'اجازتیں اور ایپ کی زندگی کی چکر، انٹرایکٹو نقشے، حرکات اور راستہ ٹریکنگ';
 }

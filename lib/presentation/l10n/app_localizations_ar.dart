@@ -24,13 +24,15 @@ class AppLocalizationsAr extends AppLocalizations {
   String get howItStartedTitle => 'كيف بدأ كل هذا';
 
   @override
-  String get howItStartedDescription => 'وُلدت عام 2001 في تركيا واكتشفت شغفي بهندسة البرمجيات في سن 14 سنة. محاولتي الأولى كانت إنشاء منتدى يسمى \'forumtim.com\' باستخدام منتدى الآلات البسيطة (SMF). رغم عدم نجاحه، لم أستسلم.\n\nعندما بدأت الجامعة في قسم الرياضيات، كرست نفسي لتحسين مهاراتي في هندسة البرمجيات. بدأت رحلتي مع Python، مثل العديدين الآخرين، ثم انتقلت لاحقاً إلى تطوير الويب، مما أدى إلى تدريب داخلي في Jotform. في عام 2020، اكتشفت Flutter، إطار عمل صاعد في ذلك الوقت، وقررت التخصص كمطور Flutter.\n\nمنذ ذلك الحين، عملت مع عدة شركات، وكتبت مقالات على Medium، وسجلت مقاطع فيديو على YouTube، وأنشأت مشاريع مفتوحة المصدر للمساهمة في مجتمع المطورين.';
+  String get howItStartedDescription =>
+      'وُلدت عام 2001 في تركيا واكتشفت شغفي بهندسة البرمجيات في سن 14 سنة. محاولتي الأولى كانت إنشاء منتدى يسمى \'forumtim.com\' باستخدام منتدى الآلات البسيطة (SMF). رغم عدم نجاحه، لم أستسلم.\n\nعندما بدأت الجامعة في قسم الرياضيات، كرست نفسي لتحسين مهاراتي في هندسة البرمجيات. بدأت رحلتي مع Python، مثل العديدين الآخرين، ثم انتقلت لاحقاً إلى تطوير الويب، مما أدى إلى تدريب داخلي في Jotform. في عام 2020، اكتشفت Flutter، إطار عمل صاعد في ذلك الوقت، وقررت التخصص كمطور Flutter.\n\nمنذ ذلك الحين، عملت مع عدة شركات، وكتبت مقالات على Medium، وسجلت مقاطع فيديو على YouTube، وأنشأت مشاريع مفتوحة المصدر للمساهمة في مجتمع المطورين.';
 
   @override
   String get howIsItGoingTitle => 'كيف تسير الأمور';
 
   @override
-  String get howIsItGoingDescription => 'أنا مطور Flutter بخبرة واسعة في بناء تطبيقات جوال حدسية وفعالة باستخدام ممارسات الترميز النظيف.\n\nعلى مدار السنين، تعاونت مع شركات مختلفة لتقديم تطبيقات Flutter عالية الجودة مصممة خصيصاً لاحتياجاتهم. أنا حريص على تولي مشاريع صعبة تدفع حدود تطوير تطبيقات الهاتف المحمول.\n\nفي وقت فراغي، أستمتع بإنشاء مشاريع مفتوحة المصدر، وتسجيل دروس الفيديو عبر YouTube، ومشاركة الرؤى من خلال مقالات Medium.';
+  String get howIsItGoingDescription =>
+      'أنا مطور Flutter بخبرة واسعة في بناء تطبيقات جوال حدسية وفعالة باستخدام ممارسات الترميز النظيف.\n\nعلى مدار السنين، تعاونت مع شركات مختلفة لتقديم تطبيقات Flutter عالية الجودة مصممة خصيصاً لاحتياجاتهم. أنا حريص على تولي مشاريع صعبة تدفع حدود تطوير تطبيقات الهاتف المحمول.\n\nفي وقت فراغي، أستمتع بإنشاء مشاريع مفتوحة المصدر، وتسجيل دروس الفيديو عبر YouTube، ومشاركة الرؤى من خلال مقالات Medium.';
 
   @override
   String get hi => 'مرحبا! ';
@@ -54,25 +56,29 @@ class AppLocalizationsAr extends AppLocalizations {
   String get socialDatingTitle => 'تطبيق المواعدة الاجتماعية مع Bloc و DDD';
 
   @override
-  String get socialDatingDescription => 'تطبيق مواعدة اجتماعي مع مبادئ Bloc و Freezed و DDD.';
+  String get socialDatingDescription =>
+      'تطبيق مواعدة اجتماعي مع مبادئ Bloc و Freezed و DDD.';
 
   @override
   String get textToImageGeneratorTitle => 'مولد الصور من النصوص';
 
   @override
-  String get textToImageGeneratorDescription => 'إنشاء صور من موجهات نصية باستخدام نموذج ذكاء اصطناعي متقدم.';
+  String get textToImageGeneratorDescription =>
+      'إنشاء صور من موجهات نصية باستخدام نموذج ذكاء اصطناعي متقدم.';
 
   @override
   String get dddTitle => 'Flutter Firebase DDD مع BLoC';
 
   @override
-  String get dddDescription => 'تطبيق سلسلة DDD محدث مع تكامل Firebase وحالة BLoC.';
+  String get dddDescription =>
+      'تطبيق سلسلة DDD محدث مع تكامل Firebase وحالة BLoC.';
 
   @override
   String get openSourceTitle => 'المصدر المفتوح';
 
   @override
-  String get openSourceDescription => 'البرمجيات مفتوحة المصدر هي جزء أساسي من رحلتي الهندسية. هذه هي الطريقة التي أتعلم بها وأنمو وأساهم في العودة إلى المجتمع. أشعر برضا حول تأثري بالآخرين من خلال مشاريعي. لا تتردد في استكشاف بعضها على GitHub الخاص بي!';
+  String get openSourceDescription =>
+      'البرمجيات مفتوحة المصدر هي جزء أساسي من رحلتي الهندسية. هذه هي الطريقة التي أتعلم بها وأنمو وأساهم في العودة إلى المجتمع. أشعر برضا حول تأثري بالآخرين من خلال مشاريعي. لا تتردد في استكشاف بعضها على GitHub الخاص بي!';
 
   @override
   String get viewMoreOnGithubText => 'عرض المزيد على GitHub';
@@ -81,13 +87,15 @@ class AppLocalizationsAr extends AppLocalizations {
   String get flutterSocialChatTitle => 'Flutter الدردشة الاجتماعية';
 
   @override
-  String get flutterSocialChatDescription => 'تطبيق دردشة هجين وعملي وقابل للتصميم: Flutter Social Chat.';
+  String get flutterSocialChatDescription =>
+      'تطبيق دردشة هجين وعملي وقابل للتصميم: Flutter Social Chat.';
 
   @override
   String get flutterPersonalWebsiteTitle => 'موقع Flutter الشخصي';
 
   @override
-  String get flutterPersonalWebsiteDescription => 'هذا الموقع أيضاً مشروع مفتوح المصدر.';
+  String get flutterPersonalWebsiteDescription =>
+      'هذا الموقع أيضاً مشروع مفتوح المصدر.';
 
   @override
   String get github => 'GitHub';
@@ -99,7 +107,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get stayInTouch => 'ابقَ على اتصال';
 
   @override
-  String get stayInTouchSubText => 'لا تفوت آخر منشوراتي ومشاريعي! تواصل معي على Twitter للبقاء متصلاً، أطرح الأسئلة، أو فقط تحدث عن أي شيء!';
+  String get stayInTouchSubText =>
+      'لا تفوت آخر منشوراتي ومشاريعي! تواصل معي على Twitter للبقاء متصلاً، أطرح الأسئلة، أو فقط تحدث عن أي شيء!';
 
   @override
   String get followMe => 'تابعني';
@@ -111,7 +120,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get writingTitle => 'Medium (FlutterWiz)';
 
   @override
-  String get writingTitleDescription => 'على Medium، أشارك رحلتي كمطور Flutter، والتعامل مع مواضيع مثل إدارة الحالة والعمارة والتحديات. بالإضافة إلى الكتابة لملفي الشخصي، أساهم في منشورات معروفة مثل CodeX و Towards Dev.';
+  String get writingTitleDescription =>
+      'على Medium، أشارك رحلتي كمطور Flutter، والتعامل مع مواضيع مثل إدارة الحالة والعمارة والتحديات. بالإضافة إلى الكتابة لملفي الشخصي، أساهم في منشورات معروفة مثل CodeX و Towards Dev.';
 
   @override
   String get mapAppTitle => 'بناء تطبيق الخريطة';
@@ -141,7 +151,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get youtubeTitle => 'YouTube (FlutterWiz)';
 
   @override
-  String get youtubeDescription => 'أشارك خبراتي ورؤايني حول تطوير Flutter كـ FlutterWiz، مع التركيز على إدارة الحالة والعمارة النظيفة والمشاريع مفتوحة المصدر. تغطي مقاطع الفيديو الخاصة بي أيضاً تحديات الترميز العملية والنصائح.';
+  String get youtubeDescription =>
+      'أشارك خبراتي ورؤايني حول تطوير Flutter كـ FlutterWiz، مع التركيز على إدارة الحالة والعمارة النظيفة والمشاريع مفتوحة المصدر. تغطي مقاطع الفيديو الخاصة بي أيضاً تحديات الترميز العملية والنصائح.';
 
   @override
   String get visitYoutubeChannelText => 'قم بزيارة FlutterWiz';
@@ -153,7 +164,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get dateMarch => 'مارس 12، 2023';
 
   @override
-  String get flutterSohbetleriDescription => 'الدردشة حول رحلات مطوري Flutter في تركيا—بدءاً مني، في هذه الحلقة الأولى!';
+  String get flutterSohbetleriDescription =>
+      'الدردشة حول رحلات مطوري Flutter في تركيا—بدءاً مني، في هذه الحلقة الأولى!';
 
   @override
   String get socialChatTitle => 'دروس Flutter Social Chat';
@@ -162,7 +174,8 @@ class AppLocalizationsAr extends AppLocalizations {
   String get dateJan => 'يناير 23، 2023';
 
   @override
-  String get socialChatDescription => 'تعلم بناء تطبيق دردشة اجتماعي Flutter خطوة بخطوة في هذه السلسلة التعليمية!';
+  String get socialChatDescription =>
+      'تعلم بناء تطبيق دردشة اجتماعي Flutter خطوة بخطوة في هذه السلسلة التعليمية!';
 
   @override
   String get flutterMapAppTitle => 'بناء تطبيق Flutter Map';
@@ -171,5 +184,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String get dateFebTwelve => 'فبراير 12، 2025';
 
   @override
-  String get flutterMapAppDescription => 'الأذونات ودورة حياة التطبيق والخرائط التفاعلية والحركات وتتبع المسار';
+  String get flutterMapAppDescription =>
+      'الأذونات ودورة حياة التطبيق والخرائط التفاعلية والحركات وتتبع المسار';
 }
