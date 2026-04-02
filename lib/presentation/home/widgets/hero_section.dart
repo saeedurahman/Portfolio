@@ -94,7 +94,7 @@ class HeroSection extends StatelessWidget {
         ),
         const SizedBox(height: 32),
         const Text(
-          'With 1.5+ years of professional experience in leading software houses, '
+          'With 2+ years of professional experience in software houses, '
           'I build performant mobile apps with Flutter and robust backend APIs with '
           'Python & FastAPI. From POS systems to LMS platforms \u2014 I deliver '
           'end-to-end solutions that scale.',
