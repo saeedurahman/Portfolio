@@ -12,14 +12,7 @@ import 'widgets/testimonials_section.dart';
 import 'widgets/contact_section.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({
-    super.key,
-    required this.onTapLanguageButton,
-    required this.isAppLanguageEnglish,
-  });
-
-  final VoidCallback onTapLanguageButton;
-  final bool isAppLanguageEnglish;
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();

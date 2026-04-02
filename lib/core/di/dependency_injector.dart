@@ -6,5 +6,5 @@ final getIt = GetIt.instance;
 
 void injectionSetup() {
   getIt.registerFactory(() => LocalDatabase());
-  getIt.registerFactory(() => HomeCubit(getIt<LocalDatabase>()));
-} 
+  getIt.registerFactory(() => HomeCubit());
+}

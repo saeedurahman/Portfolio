@@ -22,7 +22,7 @@ class _ExperienceData {
 
 const _experiences = <_ExperienceData>[
   _ExperienceData(
-    period: '2025 \u2013 Present',
+    period: '2026 \u2013 Present',
     role: 'Flutter Developer',
     company: 'Software House',
     description:
@@ -51,7 +51,7 @@ const _experiences = <_ExperienceData>[
     ],
   ),
   _ExperienceData(
-    period: '2023 \u2013 2024',
+    period: ' 2024',
     role: 'Self-taught Developer',
     company: 'Learning Phase',
     description:
