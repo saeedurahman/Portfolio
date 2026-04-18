@@ -26,3 +26,9 @@ doc/api/
 .flutter-plugins
 .flutter-plugins-dependencies
 .DS_Store
+
+# GitHub Pages: Flutter compiles to JS under docs/ — must not be ignored
+!docs/**/*.js
+!docs/**/*.js_
+!docs/**/*.js.deps
+!docs/**/*.js.map
