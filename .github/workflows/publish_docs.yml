@@ -1,0 +1,53 @@
+# Keeps GitHub Pages in sync when using: Settings → Pages → Deploy from a branch → main → /docs
+# (The /docs folder must contain the Flutter *build* output, not web/index.html source.)
+name: Publish docs (Flutter web)
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'docs/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-docs
+  cancel-in-progress: true
+
+jobs:
+  build-and-sync-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - run: flutter pub get
+      - name: Build web
+        run: flutter build web --release --base-href "/Portfolio/"
+
+      - name: Sync build/web → docs/
+        run: |
+          rm -rf docs
+          mkdir -p docs
+          cp -a build/web/. docs/
+          touch docs/.nojekyll
+
+      - name: Commit and push docs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if git diff --staged --quiet; then
+            echo "No changes to docs"
+          else
+            git commit -m "chore: sync docs from Flutter build [skip ci]"
+            git push
+          fi
