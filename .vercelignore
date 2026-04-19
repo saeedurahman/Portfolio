@@ -1,0 +1,6 @@
+# GitHub Pages build output — not used on Vercel (smaller uploads)
+docs/
+
+# Local / CI artifacts — Vercel rebuilds from source
+build/
+.dart_tool/
