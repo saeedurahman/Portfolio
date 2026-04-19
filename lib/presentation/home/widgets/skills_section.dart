@@ -283,7 +283,7 @@ class _AnimatedSkillCardState extends State<_AnimatedSkillCard>
               scale: _isHovered ? 1.05 : 1.0,
               duration: const Duration(milliseconds: 200),
               child: GlassContainer(
-                width: 220,
+                width: 320,
                 padding: const EdgeInsets.all(24),
                 backgroundColor: _isHovered
                     ? glassBackground.withValues(alpha: 0.2)
