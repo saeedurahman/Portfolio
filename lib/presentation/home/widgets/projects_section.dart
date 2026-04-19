@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../../../core/constants/colors.dart';
-import '../../../core/design_system/glass_container.dart';
+import 'package:alperefesahin_dev/core/constants/colors.dart';
+import 'package:alperefesahin_dev/core/design_system/glass_container.dart';
 
 class _ProjectData {
   final String title;
@@ -44,7 +44,7 @@ const _projects = <_ProjectData>[
         'video lessons, and interactive quizzes natively optimized for both iOS and Android.',
     techStack: ['Flutter', 'Firebase', 'BLoC/Cubit', 'REST API'],
     stats: [
-      {'label': 'Downloads', 'value': '10k+'},
+      {'label': 'Downloads', 'value': '200+'},
       {'label': 'Rating', 'value': '4.8\u2605'},
     ],
     roleType: 'Personal',
@@ -57,7 +57,7 @@ const _projects = <_ProjectData>[
         'grading dashboards, attendance tracking, and parent notification modules.',
     techStack: ['Flutter', 'REST API', 'BLoC', 'Video Player'],
     stats: [
-      {'label': 'Users', 'value': '500+'},
+      {'label': 'Users', 'value': '100+'},
       {'label': 'Type', 'value': 'Enterprise'},
     ],
     roleType: 'Professional',
@@ -97,7 +97,7 @@ class ProjectsSection extends StatelessWidget {
   const ProjectsSection({super.key});
 
   Future<void> _launchGitHub() async {
-    final Uri url = Uri.parse('https://github.com/saeedurrahman');
+    final Uri url = Uri.parse('https://github.com/saeedurahman');
     if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
       debugPrint('Could not launch GitHub');
     }
@@ -241,7 +241,7 @@ class _AnimatedProjectCardState extends State<_AnimatedProjectCard> {
             borderRadius: 24,
             padding: EdgeInsets.zero,
             borderColor:
-                _isHovered ? accentCyan.withOpacity(0.5) : glassBorder,
+                _isHovered ? accentCyan.withValues(alpha: 0.5) : glassBorder,
             child: widget.isMobile
                 ? Column(
                     children: [_buildIconArea(), _buildContentArea()],
@@ -284,13 +284,13 @@ class _AnimatedProjectCardState extends State<_AnimatedProjectCard> {
                     const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                 decoration: BoxDecoration(
                   color: widget.roleType == 'Professional'
-                      ? backgroundPurple.withOpacity(0.3)
-                      : accentCyan.withOpacity(0.1),
+                      ? backgroundPurple.withValues(alpha: 0.3)
+                      : accentCyan.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(20),
                   border: Border.all(
                     color: widget.roleType == 'Professional'
-                        ? backgroundPurple.withOpacity(0.6)
-                        : accentCyan.withOpacity(0.3),
+                        ? backgroundPurple.withValues(alpha: 0.6)
+                        : accentCyan.withValues(alpha: 0.3),
                   ),
                 ),
                 child: Text(
@@ -350,9 +350,9 @@ class _AnimatedProjectCardState extends State<_AnimatedProjectCard> {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
       decoration: BoxDecoration(
-        color: backgroundPurple.withOpacity(0.2),
+        color: backgroundPurple.withValues(alpha: 0.2),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: backgroundPurple.withOpacity(0.5)),
+        border: Border.all(color: backgroundPurple.withValues(alpha: 0.5)),
       ),
       child: Text(
         tech,
@@ -391,7 +391,7 @@ class _AnimatedProjectCardState extends State<_AnimatedProjectCard> {
       height: widget.isMobile ? 200 : null,
       constraints: BoxConstraints(minHeight: widget.isMobile ? 200 : 300),
       decoration: BoxDecoration(
-        color: backgroundDark.withOpacity(0.5),
+        color: backgroundDark.withValues(alpha: 0.5),
         border: Border(
           left: BorderSide(
             color: widget.isMobile ? Colors.transparent : glassBorder,
@@ -416,12 +416,12 @@ class _AnimatedProjectCardState extends State<_AnimatedProjectCard> {
                 width: 80,
                 height: 80,
                 decoration: BoxDecoration(
-                  color: accentCyan.withOpacity(0.1),
+                  color: accentCyan.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(20),
-                  border: Border.all(color: accentCyan.withOpacity(0.3)),
+                  border: Border.all(color: accentCyan.withValues(alpha: 0.3)),
                   boxShadow: [
                     BoxShadow(
-                      color: accentCyan.withOpacity(_isHovered ? 0.3 : 0.1),
+                      color: accentCyan.withValues(alpha: _isHovered ? 0.3 : 0.1),
                       blurRadius: 30,
                       spreadRadius: _isHovered ? 5 : 0,
                     ),

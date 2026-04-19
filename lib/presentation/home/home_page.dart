@@ -1,15 +1,16 @@
+import 'package:alperefesahin_dev/core/constants/colors.dart';
+import 'package:alperefesahin_dev/presentation/home/widgets/animated_background.dart';
+import 'package:alperefesahin_dev/presentation/home/widgets/code_snippet_section.dart';
+import 'package:alperefesahin_dev/presentation/home/widgets/contact_section.dart';
+import 'package:alperefesahin_dev/presentation/home/widgets/experience_section.dart';
+import 'package:alperefesahin_dev/presentation/home/widgets/header_navigation.dart';
+import 'package:alperefesahin_dev/presentation/home/widgets/hero_section.dart';
+import 'package:alperefesahin_dev/presentation/home/widgets/projects_section.dart';
+import 'package:alperefesahin_dev/presentation/home/widgets/services_section.dart';
+import 'package:alperefesahin_dev/presentation/home/widgets/skills_section.dart';
+import 'package:alperefesahin_dev/presentation/home/widgets/testimonials_section.dart';
 import 'package:flutter/material.dart';
-import '../../core/constants/colors.dart';
-import 'widgets/animated_background.dart';
-import 'widgets/header_navigation.dart';
-import 'widgets/hero_section.dart';
-import 'widgets/services_section.dart';
-import 'widgets/skills_section.dart';
-import 'widgets/projects_section.dart';
-import 'widgets/experience_section.dart';
-import 'widgets/code_snippet_section.dart';
-import 'widgets/testimonials_section.dart';
-import 'widgets/contact_section.dart';
+
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

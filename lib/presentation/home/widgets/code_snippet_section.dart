@@ -1,6 +1,6 @@
+import 'package:alperefesahin_dev/core/constants/colors.dart';
 import 'package:flutter/material.dart';
-import '../../../core/constants/colors.dart';
-import '../../../core/design_system/glass_container.dart';
+import 'package:alperefesahin_dev/core/design_system/glass_container.dart';
 
 class CodeSnippetSection extends StatelessWidget {
   const CodeSnippetSection({super.key});
@@ -20,7 +20,7 @@ class CodeSnippetSection extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 16),
-        Text(
+        const Text(
           'I write maintainable, scalable, and beautifully structured code.',
           style: TextStyle(fontSize: 18, color: textSecondary),
         ),
@@ -38,7 +38,7 @@ class CodeSnippetSection extends StatelessWidget {
                   vertical: 12,
                 ),
                 decoration: BoxDecoration(
-                  color: backgroundDark.withOpacity(0.5),
+                  color: backgroundDark.withValues(alpha: 0.5),
                   border: const Border(bottom: BorderSide(color: glassBorder)),
                 ),
                 child: Row(
@@ -49,7 +49,7 @@ class CodeSnippetSection extends StatelessWidget {
                     const SizedBox(width: 8),
                     _buildWindowControl(Colors.green),
                     const SizedBox(width: 24),
-                    Expanded(
+                   const Expanded(
                       child: Text(
                         'lib/presentation/home/home_page.dart',
                         style: TextStyle(

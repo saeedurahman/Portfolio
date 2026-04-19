@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../../core/constants/colors.dart';
-import '../../../core/design_system/glass_container.dart';
-
+import 'package:alperefesahin_dev/core/constants/colors.dart';
+import 'package:alperefesahin_dev/core/design_system/glass_container.dart';
+  
 class _ExperienceData {
   final String period;
   final String role;
@@ -52,15 +52,15 @@ const _experiences = <_ExperienceData>[
   ),
   _ExperienceData(
     period: ' 2024',
-    role: 'Self-taught Developer',
-    company: 'Learning Phase',
+    role: 'Software Engineering Diploma · ISDP',
+    company: 'Intensive Software Development Program',
     description:
-        'Intensive self-learning phase covering Flutter, Dart, Python, and software engineering fundamentals.',
+        'Joined ISDP in 2024 to sharpen the skills I bring to client work: full-stack web delivery, solid backend APIs, and shipping real products end to end.',
     highlights: [
-      'Completed Flutter & Dart courses',
-      'Learned Python & FastAPI for backend',
-      'Built first personal projects',
-      'Studied Clean Architecture & SOLID principles',
+      'Python, Flask, SQL, React, HTML & CSS — ready for web and API work',
+      'Stronger debugging and problem-solving on real-world builds',
+      'Shipped portfolio-style products (Miras Calculator, Quran app)',
+      'Comfortable owning features from UI through data and deployment',
     ],
   ),
 ];
@@ -152,10 +152,10 @@ class _TimelineEntryState extends State<_TimelineEntry> {
                             vertical: 3,
                           ),
                           decoration: BoxDecoration(
-                            color: accentCyan.withOpacity(0.1),
+                            color: accentCyan.withValues(alpha: 0.1),
                             borderRadius: BorderRadius.circular(8),
                             border: Border.all(
-                              color: accentCyan.withOpacity(0.3),
+                              color: accentCyan.withValues(alpha: 0.3),
                             ),
                           ),
                           child: const Text(
@@ -191,10 +191,10 @@ class _TimelineEntryState extends State<_TimelineEntry> {
                   child: GlassContainer(
                     padding: const EdgeInsets.all(28),
                     borderColor: _isHovered
-                        ? accentCyan.withOpacity(0.4)
+                        ? accentCyan.withValues(alpha: 0.4)
                         : glassBorder,
                     backgroundColor: _isHovered
-                        ? accentCyan.withOpacity(0.03)
+                        ? accentCyan.withValues(alpha: 0.03)
                         : glassBackground,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -289,12 +289,12 @@ class _TimelineEntryState extends State<_TimelineEntry> {
           decoration: BoxDecoration(
             color: widget.data.isCurrent
                 ? accentCyan
-                : accentCyan.withOpacity(0.3),
+                : accentCyan.withValues(alpha: 0.3),
             shape: BoxShape.circle,
             boxShadow: widget.data.isCurrent
                 ? [
                     BoxShadow(
-                      color: accentCyan.withOpacity(0.4),
+                      color: accentCyan.withValues(alpha: 0.4),
                       blurRadius: 12,
                       spreadRadius: 2,
                     ),

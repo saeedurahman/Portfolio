@@ -1,6 +1,6 @@
 import 'dart:math';
+import 'package:alperefesahin_dev/core/constants/colors.dart';
 import 'package:flutter/material.dart';
-import '../../../core/constants/colors.dart';
 
 class AnimatedBackground extends StatefulWidget {
   const AnimatedBackground({super.key});
@@ -44,12 +44,12 @@ class _AnimatedBackgroundState extends State<AnimatedBackground>
         final color1 =
             Color.lerp(
               backgroundDark,
-              backgroundPurple.withOpacity(0.5),
+              backgroundPurple.withValues(alpha: 0.5),
               _controller.value,
             )!;
         final color2 =
             Color.lerp(
-              backgroundPurple.withOpacity(0.5),
+              backgroundPurple.withValues(alpha: 0.5),
               backgroundDark,
               _controller.value,
             )!;
@@ -117,7 +117,7 @@ class ParticlePainter extends CustomPainter {
           ..style = PaintingStyle.fill;
 
     for (var p in particles) {
-      paint.color = accentCyan.withOpacity(p.alpha);
+      paint.color = accentCyan.withValues(alpha: p.alpha);
       canvas.drawCircle(
         Offset(p.x * size.width, p.y * size.height),
         p.radius,

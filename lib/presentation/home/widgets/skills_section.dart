@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../core/constants/colors.dart';
-import '../../../core/design_system/glass_container.dart';
+import 'package:alperefesahin_dev/core/constants/colors.dart';
+import 'package:alperefesahin_dev/core/design_system/glass_container.dart';
 
 class _SkillCategory {
   final String name;
@@ -194,7 +194,7 @@ class _SkillsSectionState extends State<SkillsSection> {
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               decoration: BoxDecoration(
                 color: isSelected
-                    ? accentCyan.withOpacity(0.15)
+                    ? accentCyan.withValues(alpha: 0.15)
                     : glassBackground,
                 borderRadius: BorderRadius.circular(30),
                 border: Border.all(
@@ -286,17 +286,17 @@ class _AnimatedSkillCardState extends State<_AnimatedSkillCard>
                 width: 220,
                 padding: const EdgeInsets.all(24),
                 backgroundColor: _isHovered
-                    ? glassBackground.withOpacity(0.2)
+                    ? glassBackground.withValues(alpha: 0.2)
                     : glassBackground,
                 borderColor:
-                    _isHovered ? accentCyan.withOpacity(0.5) : glassBorder,
+                    _isHovered ? accentCyan.withValues(alpha: 0.5) : glassBorder,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
                       padding: const EdgeInsets.all(12),
                       decoration: BoxDecoration(
-                        color: backgroundDark.withOpacity(0.5),
+                        color: backgroundDark.withValues(alpha: 0.5),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Icon(

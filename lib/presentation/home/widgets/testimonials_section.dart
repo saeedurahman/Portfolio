@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../core/constants/colors.dart';
-import '../../../core/design_system/glass_container.dart';
+import 'package:alperefesahin_dev/core/constants/colors.dart';
+import 'package:alperefesahin_dev/core/design_system/glass_container.dart';
 
 class _TestimonialData {
   final String quote;
@@ -110,15 +110,15 @@ class _TestimonialCardState extends State<_TestimonialCard> {
         transform: Matrix4.translationValues(0, _isHovered ? -6 : 0, 0),
         child: GlassContainer(
           padding: const EdgeInsets.all(28),
-          borderColor: _isHovered ? accentCyan.withOpacity(0.4) : glassBorder,
+          borderColor: _isHovered ? accentCyan.withValues(alpha: 0.4) : glassBorder,
           backgroundColor:
-              _isHovered ? accentCyan.withOpacity(0.03) : glassBackground,
+              _isHovered ? accentCyan.withValues(alpha: 0.03) : glassBackground,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Icon(
                 Icons.format_quote,
-                color: accentCyan.withOpacity(0.4),
+                color: accentCyan.withValues(alpha: 0.4),
                 size: 36,
               ),
               const SizedBox(height: 16),
@@ -138,7 +138,7 @@ class _TestimonialCardState extends State<_TestimonialCard> {
                     width: 40,
                     height: 40,
                     decoration: BoxDecoration(
-                      color: backgroundPurple.withOpacity(0.3),
+                      color: backgroundPurple.withValues(alpha: 0.3),
                       shape: BoxShape.circle,
                     ),
                     child: Center(

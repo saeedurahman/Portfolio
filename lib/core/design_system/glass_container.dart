@@ -1,6 +1,6 @@
 import 'dart:ui';
+import 'package:alperefesahin_dev/core/constants/colors.dart';
 import 'package:flutter/material.dart';
-import '../constants/colors.dart';
 
 class GlassContainer extends StatelessWidget {
   final Widget child;
@@ -37,7 +37,7 @@ class GlassContainer extends StatelessWidget {
         border: Border.all(color: borderColor, width: 1.0),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: Colors.black.withValues(alpha: 0.1),
             blurRadius: 10,
             spreadRadius: 2,
             offset: const Offset(0, 4),

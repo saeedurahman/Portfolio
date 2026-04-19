@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../../../core/constants/colors.dart';
-import '../../../core/design_system/glass_container.dart';
+import 'package:alperefesahin_dev/core/constants/colors.dart';
+import 'package:alperefesahin_dev/core/design_system/glass_container.dart';
 
 class ContactSection extends StatelessWidget {
   const ContactSection({super.key});
@@ -66,7 +66,7 @@ class ContactSection extends StatelessWidget {
             child: GlassContainer(
               padding:
                   const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
-              backgroundColor: accentCyan.withOpacity(0.1),
+              backgroundColor: accentCyan.withValues(alpha: 0.1),
               borderColor: accentCyan,
               borderRadius: 30,
               child: const Text(
@@ -88,13 +88,13 @@ class ContactSection extends StatelessWidget {
             _AnimatedSocialIcon(
               icon: Icons.code,
               tooltip: 'GitHub',
-              onTap: () => _launchUrl('https://github.com/saeedurrahman'),
+              onTap: () => _launchUrl('https://github.com/saeedurahman'),
             ),
             _AnimatedSocialIcon(
               icon: Icons.workspace_premium,
               tooltip: 'LinkedIn',
               onTap: () => _launchUrl(
-                'https://linkedin.com/in/saeed-ur-rahman',
+                'https://www.linkedin.com/in/saeeddeveloper/',
               ),
             ),
             _AnimatedSocialIcon(
@@ -154,7 +154,7 @@ class _AnimatedSocialIconState extends State<_AnimatedSocialIcon> {
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
               color:
-                  _isHovered ? accentCyan.withOpacity(0.2) : glassBackground,
+                  _isHovered ? accentCyan.withValues(alpha: 0.2) : glassBackground,
               shape: BoxShape.circle,
               border:
                   Border.all(color: _isHovered ? accentCyan : glassBorder),

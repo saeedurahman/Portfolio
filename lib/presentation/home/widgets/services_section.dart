@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../core/constants/colors.dart';
-import '../../../core/design_system/glass_container.dart';
+import 'package:alperefesahin_dev/core/constants/colors.dart';
+import 'package:alperefesahin_dev/core/design_system/glass_container.dart';
 
 class _ServiceData {
   final IconData icon;
@@ -124,17 +124,17 @@ class _ServiceCardState extends State<_ServiceCard> {
           width: isMobile ? double.infinity : 280,
           padding: const EdgeInsets.all(28),
           backgroundColor:
-              _isHovered ? accentCyan.withOpacity(0.05) : glassBackground,
-          borderColor: _isHovered ? accentCyan.withOpacity(0.4) : glassBorder,
+              _isHovered ? accentCyan.withValues(alpha: 0.05) : glassBackground,
+          borderColor: _isHovered ? accentCyan.withValues(alpha: 0.4) : glassBorder,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
                 padding: const EdgeInsets.all(14),
                 decoration: BoxDecoration(
-                  color: accentCyan.withOpacity(0.1),
+                  color: accentCyan.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(14),
-                  border: Border.all(color: accentCyan.withOpacity(0.2)),
+                  border: Border.all(color: accentCyan.withValues(alpha: 0.2)),
                 ),
                 child: Icon(
                   widget.data.icon,
@@ -172,7 +172,7 @@ class _ServiceCardState extends State<_ServiceCard> {
                           vertical: 5,
                         ),
                         decoration: BoxDecoration(
-                          color: backgroundPurple.withOpacity(0.15),
+                          color: backgroundPurple.withValues(alpha: 0.15),
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Text(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../core/constants/colors.dart';
+import 'package:alperefesahin_dev/core/constants/colors.dart';
 
 class HeaderNavigation extends StatefulWidget {
   final Function(int) onMenuTapped;
@@ -30,7 +30,7 @@ class _HeaderNavigationState extends State<HeaderNavigation> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           const Text(
-            'Saeed.',
+            'Saeed Ur Rehman',
             style: TextStyle(
               fontSize: 28,
               fontWeight: FontWeight.w800,

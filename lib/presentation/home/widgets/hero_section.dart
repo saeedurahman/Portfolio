@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../../../core/constants/colors.dart';
-import '../../../core/design_system/glass_container.dart';
+import 'package:alperefesahin_dev/core/constants/colors.dart';
+import 'package:alperefesahin_dev/core/design_system/glass_container.dart';
 
 class HeroSection extends StatelessWidget {
   final VoidCallback? onViewWork;
@@ -11,7 +11,7 @@ class HeroSection extends StatelessWidget {
 
   Future<void> _downloadCV() async {
     final Uri url = Uri.parse(
-      'https://drive.google.com/file/d/YOUR_CV_FILE_ID/view?usp=sharing',
+      'https://drive.google.com/file/d/1mCW3Pzh9zqGj6rDmtOrNWcVM4TXPpdvF/view?usp=sharing',
     );
     if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
       debugPrint('Could not launch CV link');
@@ -94,7 +94,7 @@ class HeroSection extends StatelessWidget {
         ),
         const SizedBox(height: 32),
         const Text(
-          'With 2+ years of professional experience in leading software houses, '
+          'With 1.5 years of professional experience in leading software houses, '
           'I build performant mobile apps with Flutter and robust backend APIs with '
           'Python & FastAPI. From POS systems to LMS platforms \u2014 I deliver '
           'end-to-end solutions that scale.',
@@ -123,7 +123,7 @@ class HeroSection extends StatelessWidget {
         _buildStatDivider(),
         _buildStatItem('1.5+', 'Years Exp'),
         _buildStatDivider(),
-        _buildStatItem('10k+', 'Downloads'),
+        _buildStatItem('200+', 'Downloads'),
       ],
     );
   }
@@ -171,7 +171,7 @@ class HeroSection extends StatelessWidget {
             borderRadius: BorderRadius.circular(16),
             boxShadow: [
               BoxShadow(
-                color: accentCyan.withOpacity(0.3),
+                color: accentCyan.withValues(alpha: 0.3),
                 blurRadius: 20,
                 offset: const Offset(0, 8),
               ),
@@ -195,7 +195,7 @@ class HeroSection extends StatelessWidget {
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: onContact,
-        child: GlassContainer(
+        child: const GlassContainer(
           padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
           child: const Text(
             'Contact Me',
@@ -252,7 +252,7 @@ class HeroSection extends StatelessWidget {
             shape: BoxShape.circle,
             boxShadow: [
               BoxShadow(
-                color: backgroundPurple.withOpacity(0.4),
+                color: backgroundPurple.withValues(alpha: 0.4),
                 blurRadius: 100,
                 spreadRadius: 20,
               ),
